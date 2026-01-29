@@ -14,7 +14,7 @@ upcino:
     ORG 000500H
 tabla_auto1:  DB 01H, 02H, 04H, 08H, 10H, 20H, 40H
 tabla_auto2:  DB 80H, 40H, 20H, 10H, 08H, 04H, 02H
-    
+  
     ORG 000100H
 configuro:
     movlb 0EH	    ;Bank 14
