@@ -1,0 +1,229 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/maincode00.o
+upcino CODE 0 0 0 50E 1 2
+config CONFIG 4 300000 300000 C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-CFF 1
+RAM E00-E1E 1
+SFR D00-DFF 1
+SFR E1F-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 50E-1FFFF 1
+IDLOC 200000-2000FF 1
+SMALLCONST 1000-FFFF 1
+SMALLCONST 11000-1FFFF 1
+CODE 50E-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK14 E00-E1E 1
+BIGRAM 50E-CFF 1
+BIGRAM E00-E1E 1
+BIGSFR D00-DFF 1
+BIGSFR E1F-FFF 1
+COMRAM 0-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 1000-FFFF 1
+MEDIUMCONST 11000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/maincode00.o
+0 upcino CODE >12:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+100 upcino CODE >20:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+102 upcino CODE >22:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+104 upcino CODE >23:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+106 upcino CODE >24:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+108 upcino CODE >25:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+10A upcino CODE >26:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+10C upcino CODE >27:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+10E upcino CODE >29:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+110 upcino CODE >30:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+112 upcino CODE >31:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+114 upcino CODE >33:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+116 upcino CODE >34:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+118 upcino CODE >35:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+11A upcino CODE >36:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+11C upcino CODE >37:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+11E upcino CODE >39:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+120 upcino CODE >40:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+122 upcino CODE >43:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+124 upcino CODE >44:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+126 upcino CODE >45:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+128 upcino CODE >46:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+12A upcino CODE >47:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+12C upcino CODE >48:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+130 upcino CODE >49:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+134 upcino CODE >50:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+136 upcino CODE >51:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+138 upcino CODE >52:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+13A upcino CODE >53:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+13C upcino CODE >54:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+13E upcino CODE >56:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+140 upcino CODE >57:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+142 upcino CODE >59:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+144 upcino CODE >60:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+146 upcino CODE >63:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+148 upcino CODE >64:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+14A upcino CODE >65:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+14C upcino CODE >67:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+14E upcino CODE >68:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+150 upcino CODE >70:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+152 upcino CODE >71:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+154 upcino CODE >73:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+156 upcino CODE >74:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+158 upcino CODE >75:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+15A upcino CODE >76:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+15C upcino CODE >77:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+15E upcino CODE >78:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+160 upcino CODE >79:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+162 upcino CODE >80:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+164 upcino CODE >81:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+166 upcino CODE >82:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+168 upcino CODE >83:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+16A upcino CODE >85:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+16C upcino CODE >86:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+16E upcino CODE >87:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+170 upcino CODE >89:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+172 upcino CODE >90:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+174 upcino CODE >92:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+176 upcino CODE >93:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+500 upcino CODE >15:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+507 upcino CODE >16:D:\Microchip-PIC18F47Q10\Sem02_Autofantastico.X\maincode00.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 50E 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 60000C 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 0 0 ABS 0 udata_bank9 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_bank10 0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 0 0 ABS 0 udata_bank12 -
+__Hudata_bank14 0 0 ABS 0 udata_bank14 -
+isa$xinst 0 0 ABS 0 - build/default/debug/maincode00.o
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 30000C 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 0 0 ABS 0 udata_bank12 -
+__Ludata_bank14 0 0 ABS 0 udata_bank14 -
+__Hupcino 0 0 ABS 0 upcino -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/debug/maincode00.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Lupcino 0 0 ABS 0 upcino -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 0 0 ABS 0 udata_bank9 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Hudata_acs 0 0 ABS 0 udata_acs -
+__Ludata_acs 0 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
