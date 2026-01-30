@@ -6,7 +6,7 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v3.10\pic\dat\20250813170317_en.msgs \
   -cs -h+dist/default/production\Sem02_ContadorBCD.X.production.sym \
   --cmf=dist/default/production\Sem02_ContadorBCD.X.production.cmf -z \
-  -Q18F47Q10 -oC:\Users\klnla\AppData\Local\Temp\xcAsjec.0\driver_tmp_3.o \
+  -Q18F47Q10 -oC:\Users\klnla\AppData\Local\Temp\xcAsjcc.0\driver_tmp_3.o \
   --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/production/Sem02_ContadorBCD.X.production.map -E1 \
   -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh \
@@ -21,7 +21,7 @@ Linker command line:
   -ABANK14=0E00h-0E1Eh \
   -ASFR=0D00h-0DFFh,0E1Fh-0EFFh,0F00h-0F5Fh,0F60h-0FFFh \
   -ABIGSFR=0D00h-0DFFh,0E1Fh-0FFFh -AIDLOC=0200000h-02000FFh \
-  -AEEDATA=0310000h-03103FFh build/default/production/maincode01.o 
+  -AEEDATA=0310000h-03103FFh build/default/production/maincode02.o 
 
 Object code version is 3.11
 
@@ -30,7 +30,7 @@ Machine type is 18F47Q10
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-build/default/production/maincode01.o
+build/default/production/maincode02.o
                 config                           300000   300000        C        0       4
                 upcino                                0        0      20A        0       0
 
