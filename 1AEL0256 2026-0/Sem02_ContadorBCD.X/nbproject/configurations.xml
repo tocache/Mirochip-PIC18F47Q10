@@ -21,6 +21,7 @@
       <itemPath>maincode00.s</itemPath>
       <itemPath>maincode01.s</itemPath>
       <itemPath>maincode02.s</itemPath>
+      <itemPath>maincode03.s</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -1063,6 +1064,8 @@
       <item path="maincode00.s" ex="true" overriding="false">
       </item>
       <item path="maincode01.s" ex="true" overriding="false">
+      </item>
+      <item path="maincode02.s" ex="true" overriding="false">
       </item>
       <nEdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
