@@ -6,7 +6,7 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v3.10\pic\dat\20250813170317_en.msgs \
   -cs -h+dist/default/production\Sem02_ContadorBCD.X.production.sym \
   --cmf=dist/default/production\Sem02_ContadorBCD.X.production.cmf -z \
-  -Q18F47Q10 -oC:\Users\klnla\AppData\Local\Temp\xcAsz4.0\driver_tmp_3.o \
+  -Q18F47Q10 -oC:\Users\klnla\AppData\Local\Temp\xcAsjec.0\driver_tmp_3.o \
   --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/production/Sem02_ContadorBCD.X.production.map -E1 \
   -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh \
@@ -21,7 +21,7 @@ Linker command line:
   -ABANK14=0E00h-0E1Eh \
   -ASFR=0D00h-0DFFh,0E1Fh-0EFFh,0F00h-0F5Fh,0F60h-0FFFh \
   -ABIGSFR=0D00h-0DFFh,0E1Fh-0FFFh -AIDLOC=0200000h-02000FFh \
-  -AEEDATA=0310000h-03103FFh build/default/production/maincode00.o 
+  -AEEDATA=0310000h-03103FFh build/default/production/maincode01.o 
 
 Object code version is 3.11
 
@@ -30,13 +30,13 @@ Machine type is 18F47Q10
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-build/default/production/maincode00.o
+build/default/production/maincode01.o
                 config                           300000   300000        C        0       4
-                upcino                                0        0      170        0       0
+                upcino                                0        0      20A        0       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                upcino                                0        0      170         0
+                upcino                                0        0      20A         0
 
         CLASS   CONST          
 
@@ -114,13 +114,13 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
-        BIGRAM           000170-000CFF              B90
+        BIGRAM           00020A-000CFF              AF6
                          000E00-000E1E               1F
         BIGSFR           000D00-000DFF              100
                          000E1F-000FFF              1E1
-        CODE             000170-01FFFF            1FE90
+        CODE             00020A-01FFFF            1FDF6
         COMRAM           000000-00005F               60
-        CONST            000170-01FFFF            1FE90
+        CONST            00020A-01FFFF            1FDF6
         EEDATA           310000-3103FF              400
         IDLOC            200000-2000FF              100
         MEDIUMCONST      001000-00FFFF             F000
@@ -136,7 +136,7 @@ UNUSED ADDRESS RANGES
 
 __H__absolute__ __absolute__ 000000  __Hcode         code         000000
 __Hconfig       config       30000C  __Hdata         data         000000
-__Hedata        edata        000000  __Hspace_0      (abs)        000170
+__Hedata        edata        000000  __Hspace_0      (abs)        00020A
 __Hspace_1      (abs)        000000  __Hspace_3      (abs)        000000
 __Hspace_4      (abs)        60000C  __Hudata        udata        000000
 __Hudata_acs    udata_acs    000000  __Hudata_bank0  udata_bank0  000000

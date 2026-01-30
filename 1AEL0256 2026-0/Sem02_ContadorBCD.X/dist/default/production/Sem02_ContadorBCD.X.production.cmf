@@ -11,8 +11,8 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$build/default/production/maincode00.o
-upcino CODE 0 0 0 170 1 2
+$build/default/production/maincode01.o
+upcino CODE 0 0 0 20A 1 2
 config CONFIG 4 300000 300000 C 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -34,16 +34,16 @@ BANK6 600-6FF 1
 BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
-CONST 170-1FFFF 1
+CONST 20A-1FFFF 1
 IDLOC 200000-2000FF 1
 SMALLCONST 1000-FFFF 1
 SMALLCONST 11000-1FFFF 1
-CODE 170-1FFFF 1
+CODE 20A-1FFFF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK14 E00-E1E 1
-BIGRAM 170-CFF 1
+BIGRAM 20A-CFF 1
 BIGRAM E00-E1E 1
 BIGSFR D00-DFF 1
 BIGSFR E1F-FFF 1
@@ -64,62 +64,75 @@ MEDIUMCONST 11000-1FFFF 1
 # are in ascending order of addresses.
 # All other numeric values are in decimal.
 %LINETAB
-$build/default/production/maincode00.o
-0 upcino CODE >12:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-100 upcino CODE >17:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-102 upcino CODE >18:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-104 upcino CODE >19:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-106 upcino CODE >20:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-108 upcino CODE >21:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-10A upcino CODE >22:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-10C upcino CODE >23:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-10E upcino CODE >25:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-110 upcino CODE >26:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-112 upcino CODE >27:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-114 upcino CODE >28:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-116 upcino CODE >30:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-118 upcino CODE >31:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-11A upcino CODE >34:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-11E upcino CODE >35:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-122 upcino CODE >36:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-124 upcino CODE >37:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-126 upcino CODE >38:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-128 upcino CODE >39:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-12A upcino CODE >40:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-12C upcino CODE >42:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-12E upcino CODE >43:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-130 upcino CODE >45:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-132 upcino CODE >46:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-134 upcino CODE >50:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-136 upcino CODE >51:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-138 upcino CODE >52:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-13A upcino CODE >53:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-13C upcino CODE >54:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-13E upcino CODE >58:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-140 upcino CODE >59:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-142 upcino CODE >60:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-144 upcino CODE >62:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-146 upcino CODE >63:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-148 upcino CODE >65:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-14A upcino CODE >66:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-14C upcino CODE >68:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-14E upcino CODE >69:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-150 upcino CODE >70:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-152 upcino CODE >71:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-154 upcino CODE >72:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-156 upcino CODE >73:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-158 upcino CODE >74:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-15A upcino CODE >75:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-15C upcino CODE >76:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-15E upcino CODE >77:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-160 upcino CODE >78:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-162 upcino CODE >80:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-164 upcino CODE >81:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-166 upcino CODE >82:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-168 upcino CODE >84:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-16A upcino CODE >85:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-16C upcino CODE >87:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
-16E upcino CODE >88:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode00.s
+$build/default/production/maincode01.o
+0 upcino CODE >12:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+100 upcino CODE >20:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+102 upcino CODE >21:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+104 upcino CODE >22:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+106 upcino CODE >23:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+108 upcino CODE >24:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+10A upcino CODE >25:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+10C upcino CODE >26:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+10E upcino CODE >28:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+110 upcino CODE >29:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+112 upcino CODE >30:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+114 upcino CODE >31:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+116 upcino CODE >32:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+118 upcino CODE >33:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+11A upcino CODE >34:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+11C upcino CODE >36:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+11E upcino CODE >37:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+120 upcino CODE >38:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+122 upcino CODE >39:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+124 upcino CODE >40:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+126 upcino CODE >41:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+128 upcino CODE >44:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+12A upcino CODE >45:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+12C upcino CODE >48:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+130 upcino CODE >49:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+134 upcino CODE >50:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+136 upcino CODE >51:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+138 upcino CODE >52:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+13A upcino CODE >53:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+13C upcino CODE >54:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+13E upcino CODE >56:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+140 upcino CODE >57:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+142 upcino CODE >59:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+144 upcino CODE >60:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+146 upcino CODE >64:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+148 upcino CODE >65:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+14A upcino CODE >66:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+14C upcino CODE >67:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+14E upcino CODE >68:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+150 upcino CODE >69:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+152 upcino CODE >70:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+156 upcino CODE >71:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+158 upcino CODE >75:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+15A upcino CODE >76:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+15C upcino CODE >77:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+15E upcino CODE >79:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+160 upcino CODE >80:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+162 upcino CODE >82:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+164 upcino CODE >83:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+166 upcino CODE >85:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+168 upcino CODE >86:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+16A upcino CODE >87:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+16C upcino CODE >88:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+16E upcino CODE >89:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+170 upcino CODE >90:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+172 upcino CODE >91:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+174 upcino CODE >92:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+176 upcino CODE >93:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+178 upcino CODE >94:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+17A upcino CODE >95:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+17C upcino CODE >97:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+17E upcino CODE >98:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+180 upcino CODE >99:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+182 upcino CODE >101:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+184 upcino CODE >102:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+186 upcino CODE >104:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+188 upcino CODE >105:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
+200 upcino CODE >15:D:\Microchip-PIC18F47Q10\1AEL0256 2026-01\Sem02_ContadorBCD.X\maincode01.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -132,7 +145,7 @@ $build/default/production/maincode00.o
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Hspace_0 170 0 ABS 0 - -
+__Hspace_0 20A 0 ABS 0 - -
 __Hspace_1 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 60000C 0 ABS 0 - -
@@ -151,7 +164,7 @@ __Hudata_bank10 0 0 ABS 0 udata_bank10 -
 __Hudata_bank11 0 0 ABS 0 udata_bank11 -
 __Hudata_bank12 0 0 ABS 0 udata_bank12 -
 __Hudata_bank14 0 0 ABS 0 udata_bank14 -
-isa$xinst 0 0 ABS 0 - build/default/production/maincode00.o
+isa$xinst 0 0 ABS 0 - build/default/production/maincode01.o
 __Hedata 0 0 ABS 0 edata -
 __Hudata 0 0 ABS 0 udata -
 __Hconfig 30000C 0 CONFIG 4 config -
@@ -170,7 +183,7 @@ __Ludata_bank12 0 0 ABS 0 udata_bank12 -
 __Ludata_bank14 0 0 ABS 0 udata_bank14 -
 __Hupcino 0 0 ABS 0 upcino -
 __Lconfig 0 0 CONFIG 4 config -
-isa$std 1 0 ABS 0 - build/default/production/maincode00.o
+isa$std 1 0 ABS 0 - build/default/production/maincode01.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
